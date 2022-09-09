@@ -1,0 +1,6 @@
+if(navigator.appCodeName = "Mozilla"){
+				location.href = "http://mozilla.org";
+			}
+			else {
+				location.href = "http://www.microsoft.com";
+			}
