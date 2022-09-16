@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+	<meta charset="UTF-8">
+    <title>Workshop 2</title>
+    <p id="demo"></p>
+<script>
+if (confirm("Are you a student?")) {
+  txt = "Welcome student!";
+} else {
+  txt = "Sorry, this page is for students only";
+}
+document.getElementById("demo").innerHTML = txt;
+</script>
+</head>
+<body>
+</div>
+</body>
+</html>
