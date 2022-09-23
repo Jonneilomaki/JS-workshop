@@ -1,0 +1,92 @@
+    <script>
+    
+    function nappula1(){
+        const d = new Date();
+        alert("You clicked me! "+d.getDate() + "." + (d.getMonth() +1) + "." + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds())
+    }
+    function showTable(){
+        var myDiv = document.getElementById("taulu");
+        var table = document.createElement('table');
+        var tr = document.createElement('tr');
+        var array = ['Name', 'Position', 'Salary'];
+        table.setAttribute('id', 'taulu');
+
+        for (var j = 0; j < array.length; j++) {
+            var th = document.createElement('th');
+            var text = document.createTextNode(array[j]);
+            th.appendChild(text);
+            tr.appendChild(th);
+        }
+        table.appendChild(tr);
+        for (var i = 0; i < 1; i++) {
+            var tr = document.createElement('tr');
+
+            var td1 = document.createElement('td');
+            var td2 = document.createElement('td');
+            var td3 = document.createElement('td');
+
+            var text1 = document.createTextNode('Mikko');
+            var text2 = document.createTextNode('Työmies');
+            var text3 = document.createTextNode('600000');
+
+            td1.appendChild(text1);
+            td2.appendChild(text2);
+            td3.appendChild(text3);
+
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+
+            table.appendChild(tr);
+            }
+
+            for (var i = 0; i < 1; i++) {
+            var tr = document.createElement('tr');
+
+            var td1 = document.createElement('td');
+            var td2 = document.createElement('td');
+            var td3 = document.createElement('td');
+
+            var text1 = document.createTextNode('Markku');
+            var text2 = document.createTextNode('Poliisi');
+            var text3 = document.createTextNode('320230');
+
+            td1.appendChild(text1);
+            td2.appendChild(text2);
+            td3.appendChild(text3);
+
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+
+            table.appendChild(tr);
+            }
+            
+            taulu.appendChild(table);
+    }
+        <h1>Workshop 3: JavaScript Events</h1>
+    <hr />
+    <p>In this exercise we will practice the use of BOM and the JavaScript events. Use the lecture-material as a reference guide side by side these exercises. It might also be a 
+    good idea to save the lines of code you write during the exercises for later use.</p>
+    
+    
+    <h2>Exercise 1</h2>
+    <p>&nbsp;Below you will see three buttons. Edit the source code and add an onClick-events to these buttons.</p>
+    <p>
+      <button onclick="nappula1()">Button 1</button>
+      <button onclick ="showTable()">Button 2</button>
+      <button>Button 3</button>
+    </p>
+    
+    <ul>
+      <li>Button 1 should open an alert-button, which will say "You clicked me!" </li>
+      <li> When you see the button working, add the current date after the text by using the Date() -function. HINT. You can get spesific parts of the date by first creating a date 
+    object var pvm = new Date(). And then calling for methods such as pvm.getDate() and pvm.getHours() etc. See <a 
+    href="https://www.w3schools.com/js/js_date_methods.asp" /> this for details.</a>
+    </li>
+      <li>Button 2 should call a function called showTable()". ShowTable function should output a simple HTML-table (below) to the page. Use document.write to print data. Feel 
+    free to modify the data on the table. </li>
+    HINT. You can print multiple lines using backticks:
+    <p id ="taulu"></p>
+    
+    </script>
